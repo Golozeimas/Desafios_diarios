@@ -1,8 +1,8 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import Count from './components/Counter'
+import MostrarSenha from './components/Senha'
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <Count />
+    <MostrarSenha />
   </StrictMode>,
 )
