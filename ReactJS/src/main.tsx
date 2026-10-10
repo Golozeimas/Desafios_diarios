@@ -1,9 +1,8 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import UsoDeUserEffect from './components/Useeffect'
-
+import Temas from './components/Temas'
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <UsoDeUserEffect />
+    <Temas />
   </StrictMode>,
 )
