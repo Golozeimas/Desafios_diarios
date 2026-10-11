@@ -1,8 +1,9 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import Temas from './components/Temas'
+import Cronometro from './components/Cronometro'
+
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <Temas />
+    <Cronometro/>
   </StrictMode>,
 )
