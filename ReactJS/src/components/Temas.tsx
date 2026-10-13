@@ -1,17 +1,19 @@
 import { useState, useEffect } from "react";
 
 function Temas(){
-    const [tema,setTema] = useState(
-        ()=> localStorage.getItem('tema') ?? "#FFFFFF"
-    )
+    const [tema,setTema] = useState(()=> localStorage.getItem('tema') ?? "#FFFFFF")
 
     useEffect(()=>{
         function guardarTema(): void{ 
             localStorage.setItem("tema", tema)
-            if(localStorage.getItem("tema") === "#000000"){
-                document.body.style.backgroundColor = "#000000"
-            }else if(localStorage.getItem("tema") === "#FFFFFF"){
-                document.body.style.backgroundColor = "#FFFFFF"
+            
+            switch(localStorage.getItem("tema")){
+                case "#000000":
+                    document.body.style.backgroundColor = "#000000"
+                    break
+                case "#FFFFFF":
+                    document.body.style.backgroundColor = "#FFFFFF"
+                    break
             }
         }
 

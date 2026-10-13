@@ -1,9 +1,9 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import Cronometro from './components/Cronometro'
+import Routes from './routes/Routes'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <Cronometro/>
-  </StrictMode>,
+    <Routes/>
+  </StrictMode>
 )
